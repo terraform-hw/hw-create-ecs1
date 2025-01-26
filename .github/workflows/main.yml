@@ -10,6 +10,9 @@ jobs:
     
     steps:
       - name: Run a test 
-      - uses: terraform-hw/hw-create-ecs1@main
+    #  - uses: terraform-hw/hw-create-ecs1@main
       - run: |
-           terraform --version 
+          git clone https://github.com/terraform-hw/hw-create-ecs1.git
+          cd hw-create-ecs1
+          ls -l 
+          terraform --version 
