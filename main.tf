@@ -2,7 +2,7 @@
 provider "huaweicloud" {
   region     = "me-east-1"
   access_key = "MUDXLHNXB11KBWCV1RGU"
-  secret_key = "hwsk"
+  #secret_key = "hwsk"
 }
 
 data "huaweicloud_availability_zones" "myaz" {}
