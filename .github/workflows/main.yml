@@ -18,4 +18,4 @@ jobs:
           sudo apt update && sudo apt install terraform
           terraform init
           terraform plan 
-          terraform apply
+          yes | terraform apply
