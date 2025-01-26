@@ -1,7 +1,7 @@
 # Configure the HuaweiCloud Provider
 provider "huaweicloud" {
   region     = "me-east-1"
-  access_key = "MUDXLHNXB11KBWCV1RGU"
+  #access_key = "MUDXLHNXB11KBWCV1RGU"
   #secret_key = "hwsk"
 }
 
