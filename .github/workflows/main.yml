@@ -1,7 +1,5 @@
 name: Run commands on different operating systems
-on:
-  push:
-    branches: [ main ]
+on: [push]
 
 jobs:
   Run-npm-on-Ubuntu:
