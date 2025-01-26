@@ -1,9 +1,5 @@
 # Configure the HuaweiCloud Provider
-provider "huaweicloud" {
-  region     = "me-east-1"
-  #access_key = "MUDXLHNXB11KBWCV1RGU"
-  #secret_key = "hwsk"
-}
+provider "huaweicloud" {}
 
 data "huaweicloud_availability_zones" "myaz" {}
 
@@ -36,6 +32,7 @@ resource "random_password" "password" {
 #  default = "Test@12345"
 #}
 resource "huaweicloud_compute_instance" "myinstance" {
+  region     = "me-east-1"
   name               = "my-test-terr"
 #  admin_pass         = var.password
   admin_pass         = random_password.password.result
