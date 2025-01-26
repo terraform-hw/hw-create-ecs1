@@ -1,7 +1,5 @@
 # Configure the HuaweiCloud Provider
-provider "huaweicloud" {
-  region     = "me-east-1"
-}
+provider "huaweicloud" {}
 
 data "huaweicloud_availability_zones" "myaz" {}
 
