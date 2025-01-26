@@ -12,6 +12,7 @@ jobs:
         run: |
           git clone https://github.com/terraform-hw/hw-create-ecs1.git
           cd hw-create-ecs1
+          export HW_REGION_NAME="me-east-1"
           export HW_ACCESS_KEY=${{secrets.HWAK1}}
           export HW_SECRET_KEY=${{secrets.HWS1}} 
           wget -O - https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg
