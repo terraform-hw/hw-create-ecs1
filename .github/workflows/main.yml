@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      - name: Run a test 
+      - name: create a ECS 
     #  - uses: terraform-hw/hw-create-ecs1@main
         run: |
           git clone https://github.com/terraform-hw/hw-create-ecs1.git
