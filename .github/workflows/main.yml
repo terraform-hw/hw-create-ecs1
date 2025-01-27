@@ -2,7 +2,7 @@ name: Run commands on different operating systems
 on: [push]
 env:
   HW_ACCESS_KEY: ${{ secrets.HWAK1 }}
-  HW_SECRET_KEY: ${{ secrets.HWS1 }}
+  HW_SECRET_KEY: ${{ secrets.HWSK1 }}
 jobs:
 
   Run-npm-on-Ubuntu:
