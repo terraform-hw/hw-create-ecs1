@@ -3,6 +3,7 @@ on: [push]
 env:
   HW_ACCESS_KEY: ${{ secrets.HWAK1 }}
   HW_SECRET_KEY: ${{ secrets.HWSK1 }}
+  HW_REGION_NAME: "me-east-1"
 jobs:
 
   Run-npm-on-Ubuntu:
@@ -16,9 +17,6 @@ jobs:
           git clone https://github.com/terraform-hw/hw-create-ecs1.git
           cd hw-create-ecs1
           ls -l 
-          export HW_REGION_NAME="me-east-1"
-          export HW_ACCESS_KEY=${{secrets.HWAK1}}
-          export HW_SECRET_KEY=${{secrets.HWS1}}
           echo "###"
           echo $HW_ACCESS_KEY
           echo ${{ secrets.HWAK1 }}
