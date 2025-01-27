@@ -1,4 +1,4 @@
-name: Run commands on different operating systems
+o name: Run commands on different operating systems
 on: [push]
 
 jobs:
@@ -14,7 +14,8 @@ jobs:
           cd hw-create-ecs1
           export HW_REGION_NAME="me-east-1"
           export HW_ACCESS_KEY=${{secrets.HWAK1}}
-          export HW_SECRET_KEY=${{secrets.HWS1}} 
+          export HW_SECRET_KEY=${{secrets.HWS1}}
+          echo $HW_ACCESS_KEY
           wget -O - https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg
           echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
           sudo apt update && sudo apt install terraform
